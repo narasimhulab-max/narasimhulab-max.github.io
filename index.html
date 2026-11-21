@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Narasimhula Balayesu — Portfolio</title>
-<meta name="description" content="Dr. Narasimhula Balayesu — Assistant Professor, CSE (AI & ML), VVIT Guntur. Research in heterogeneous face recognition, generative AI for biometrics, and medical image analysis.">
+<meta name="description" content="Dr. Narasimhula Balayesu — Assistant Professor, Department of CSE-AI, Vasireddy Venkatadri International Technological University (VVITU), Guntur. Research in heterogeneous face recognition, generative AI for biometrics, and medical image analysis.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236B1D2A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%23F2D9A2'%3ENB%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="Dr. Narasimhula Balayesu — Portfolio">
-<meta property="og:description" content="Assistant Professor, CSE (AI &amp; ML), VVIT Guntur. Heterogeneous face recognition, generative AI for biometrics and medical image analysis.">
+<meta property="og:description" content="Assistant Professor, Department of CSE-AI, VVITU, Guntur. Heterogeneous face recognition, generative AI for biometrics and medical image analysis.">
 <meta property="og:type" content="profile">
 <meta name="theme-color" content="#6B1D2A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,10 @@
     --soft-2:#EFE5D6;
     --ink:#2B1A1D;
     --ink-2:#5B4A4D;
-    --ink-3:#8E7C7E;
+    --ink-3:#76646A;
     --line:#E9DFD1;
     --navy:#6B1D2A;
-    --teal:#9A6B1E;
+    --teal:#80561A;
     --teal-2:#F6EBD5;
     --gold:#B8862B;
     --radius:16px;
@@ -63,6 +63,7 @@
   .pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 14px 6px 8px;border-radius:999px;font-size:13px;font-weight:500;color:var(--ink-2);box-shadow:var(--shadow)}
   .pill i{width:8px;height:8px;border-radius:50%;background:#22a06b;box-shadow:0 0 0 4px rgba(34,160,107,.15);margin-left:4px}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.4vw,62px);line-height:1.08;letter-spacing:-.02em;margin:22px 0 10px;color:var(--navy)}
+  .univ{margin-top:4px;font-size:16px;font-weight:500;color:var(--ink-2)}
   .role{font-size:19px;font-weight:600;color:var(--teal)}
   .lede{margin-top:18px;font-size:18px;color:var(--ink-2);max-width:580px}
   .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
@@ -261,6 +262,34 @@
   .fdp h4{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45}
   .fdp p{font-size:13.8px;color:var(--ink-3);margin-top:3px;line-height:1.5}
   @media (max-width:860px){.ngrid,.fdp{grid-template-columns:1fr}}
+  [hidden]{display:none!important}
+  .news{margin-top:22px}
+  .news-box{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:12px;padding:16px 20px}
+  .news-tag{flex:none;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--navy);color:#F2D9A2;padding:4px 10px;border-radius:999px;margin-top:2px}
+  .news-list{list-style:none;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+  .news-list b{display:inline-block;min-width:74px;color:var(--navy);font-weight:700}
+  .news-list li:nth-child(n+4){display:none}
+  .news-box.open .news-list li{display:list-item}
+  .news-toggle{flex:none;margin-left:auto;background:none;border:none;font:inherit;font-size:13px;font-weight:600;color:var(--teal);cursor:pointer;white-space:nowrap}
+  .pub-tools{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+  .pub-tools .filters{margin-bottom:0}
+  .pub-ctrl{display:flex;gap:10px;flex-wrap:wrap}
+  .search{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:0 14px;height:40px;min-width:260px}
+  .search:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,134,43,.18)}
+  .search svg{width:16px;height:16px;color:var(--ink-3);flex:none}
+  .search input{border:none;outline:none;background:none;font:inherit;font-size:14px;color:var(--ink);width:100%}
+  #pubSort{height:40px;border:1px solid var(--line);border-radius:999px;background:#fff;font:inherit;font-size:14px;padding:0 14px;color:var(--ink);cursor:pointer}
+  .cite-btn{font:inherit;font-size:12px;font-weight:600;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink-2);cursor:pointer;transition:.2s}
+  .cite-btn:hover{border-color:var(--navy);color:var(--navy)}
+  .cite-btn.done{background:var(--navy);color:#F2D9A2;border-color:var(--navy)}
+  .pub.hide{display:none}
+  .pub-empty{text-align:center;color:var(--ink-3);padding:24px}
+  .more-wrap{text-align:center;margin-top:18px}
+  .more-btn{font:inherit;font-size:14.5px;font-weight:600;padding:11px 22px;border-radius:12px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;transition:.2s}
+  .more-btn:hover{background:var(--navy);color:#fff}
+  #expMore{margin:4px 0 0 64px}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+  @media (max-width:560px){.search{min-width:0;flex:1}.pub-ctrl{width:100%}.news-box{flex-direction:column;gap:10px}#expMore{margin-left:0}}
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
@@ -301,7 +330,7 @@
 
 <nav id="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="logo">NB</span><span>Dr. N. Balayesu<small>VVIT · CSE (AI &amp; ML)</small></span></a>
+    <a class="brand" href="#top"><span class="logo">NB</span><span>Dr. N. Balayesu<small>VVITU · Dept. of CSE-AI</small></span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="links" id="links">
       <li><a href="#about">About</a></li>
@@ -322,7 +351,8 @@
       <div>
         <span class="pill"><i></i>Open to research collaborations</span>
         <h1>Dr. Narasimhula Balayesu</h1>
-        <div class="role">Assistant Professor · Computer Science &amp; Engineering (AI &amp; ML)</div>
+        <div class="role">Assistant Professor · Department of CSE-AI</div>
+        <div class="univ">Vasireddy Venkatadri International Technological University (VVITU), Guntur</div>
         <p class="lede">I develop deep learning methods for <b>biometrics</b> and <b>healthcare</b>: heterogeneous face recognition, identity-preserving generative models, deepfake detection and explainable medical image analysis.</p>
         <div class="btns">
           <a class="btn primary" href="#publications">
@@ -331,6 +361,9 @@
           <a class="btn ghost" href="#contact">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
             Get in touch</a>
+          <a class="btn ghost" id="cvBtn" href="cv.pdf" target="_blank" rel="noopener" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+            Download CV</a>
         </div>
         <div class="socials">
           <a href="https://scholar.google.com/citations?user=baGG83EAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9.5l4 2.4V17l7 4 7-4v-5.1l2-1.2V17h2V9.5L12 3zm0 2.3 7.6 4.2L12 13.7 4.4 9.5 12 5.3zM7 13.1l5 2.9 5-2.9v2.7l-5 2.9-5-2.9v-2.7z"/></svg></a>
@@ -357,6 +390,19 @@
   </div>
 </div>
 
+<div class="wrap news reveal" aria-label="Latest news">
+  <div class="news-box">
+    <span class="news-tag">Latest</span>
+    <ul class="news-list">
+      <li><b>Oct 2026</b> Completed 40-hour MeitY FDP on Machine Learning for Moving Objects Data Analysis (E&amp;ICT Academy, NIT Warangal)</li>
+      <li><b>Sep 2026</b> Attended STTP on LaTeX for Research Excellence at NIT Raipur</li>
+      <li><b>Aug 2026</b> Patent filed: Distributed Quantum Processing Network with Adaptive Qubit Synchronization</li>
+      <li><b>Jun 2026</b> Patent published: Automated Medical Imaging Analysis and Disease Detection Using Deep Learning (IN202641070321 A1)</li>
+      <li><b>2025</b> Two papers published in <i>Scientific Reports</i> (Nature Portfolio)</li>
+    </ul>
+  </div>
+</div>
+
 <section id="about">
   <div class="wrap">
     <div class="about">
@@ -364,16 +410,16 @@
         <span class="kicker">About me</span>
         <h2>Biometrics, generative AI and medical imaging</h2>
         <div class="text" style="margin-top:22px">
-          <p>I am an Assistant Professor in the Department of Computer Science &amp; Engineering (AI &amp; ML) at <strong>Vasireddy Venkatadri Institute of Technology, Guntur</strong>, and have taught for more than sixteen years.</p>
+          <p>I am an Assistant Professor in the Department of Computer Science &amp; Engineering – Artificial Intelligence (CSE-AI) at <strong>Vasireddy Venkatadri International Technological University (VVITU), Guntur</strong>, and have taught for more than sixteen years.</p>
           <p>I completed my Ph.D. at <strong>Vignan's Foundation for Science, Technology and Research (VFSTR)</strong> under the guidance of Dr. Susanta Kumar Satpathy. My thesis was on deep learning-based <strong>heterogeneous face recognition</strong>: matching a person's identity across very different image types, such as forensic sketches and photographs.</p>
           <p>My current work uses diffusion models and multimodal transformers to synthesise and recognise faces across domains. I apply the same ideas to trustworthy, explainable AI for early breast cancer diagnosis.</p>
         </div>
       </div>
       <div class="facts reveal">
-        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span><div><small>Institution</small><span>VVIT / VVITU, Guntur, Andhra Pradesh, India</span></div></div>
-        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></span><div><small>Department</small><span>Computer Science &amp; Engineering (AI &amp; ML)</span></div></div>
+        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span><div><small>Institution</small><span>Vasireddy Venkatadri International Technological University (VVITU), Nambur, Guntur, Andhra Pradesh, India</span></div></div>
+        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></span><div><small>Department</small><span>Computer Science &amp; Engineering – Artificial Intelligence (CSE-AI)</span></div></div>
         <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><div><small>Doctorate</small><span>Ph.D., VFSTR: heterogeneous face recognition</span></div></div>
-        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Experience</small><span>16+ years in CSE / AI &amp; ML education</span></div></div>
+        <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Experience</small><span>16+ years in Computer Science &amp; AI education</span></div></div>
       </div>
     </div>
   </div>
@@ -454,7 +500,7 @@
       <div><h3 class="col-h">Professional experience</h3><div class="tl">
       <div class="tl-item reveal">
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-        <div class="tl-card"><div class="when">May 2022 – Present</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE (AI &amp; ML), Vasireddy Venkatadri Institute of Technology, Nambur, Guntur</div><p>I teach core CS and applied AI courses, guide B.Tech major projects, lead research in biometrics and medical AI, and contribute to NBA/NAAC accreditation. Also served as In-charge Head of Department.</p></div>
+        <div class="tl-card"><div class="when">May 2022 – Present</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE-AI, Vasireddy Venkatadri International Technological University (VVITU), Nambur, Guntur</div><p>I teach core CS and applied AI courses, guide B.Tech major projects, lead research in biometrics and medical AI, and contribute to NBA/NAAC accreditation. Also served as In-charge Head of Department.</p></div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
@@ -464,23 +510,24 @@
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <div class="tl-card"><div class="when">Jun 2018 – Dec 2020</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE, Vignan's Foundation for Science, Technology and Research (VFSTR), Guntur</div></div>
       </div>
-      <div class="tl-item reveal">
+      <div class="tl-item reveal tl-old" hidden>
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <div class="tl-card"><div class="when">Dec 2015 – Jun 2018</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE, Vignan's Lara Institute of Technology and Science, Vadlamudi</div><p>Department Time Table In-charge.</p></div>
       </div>
-      <div class="tl-item reveal">
+      <div class="tl-item reveal tl-old" hidden>
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <div class="tl-card"><div class="when">Jan 2014 – Dec 2015</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE, Raghu Engineering College, Visakhapatnam</div><p>Examination Section In-charge and Criterion-IV In-charge.</p></div>
       </div>
-      <div class="tl-item reveal">
+      <div class="tl-item reveal tl-old" hidden>
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <div class="tl-card"><div class="when">Dec 2012 – Jan 2014</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE, Kaushik College of Engineering, Visakhapatnam</div></div>
       </div>
-      <div class="tl-item reveal">
+      <div class="tl-item reveal tl-old" hidden>
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <div class="tl-card"><div class="when">May 2008 – May 2010</div><h3>Assistant Professor</h3><div class="where">Dept. of CSE, Vignan's Engineering College, Vadlamudi</div></div>
       </div>
-      </div></div>
+      </div>
+      <button class="more-btn" id="expMore" type="button">Show earlier positions (4)</button></div>
       <div><h3 class="col-h">Education</h3><div class="tl">
       <div class="tl-item reveal">
         <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
@@ -512,28 +559,35 @@
       <div><b>5</b><span>h-index</span></div>
       <div><b>3</b><span>i10-index</span></div>
     </div>
-    <div class="filters reveal" role="tablist">
+    <div class="pub-tools reveal"><div class="filters" role="tablist">
       <button class="on" data-f="all">All <span>14</span></button>
       <button data-f="j">Journals <span>11</span></button>
       <button data-f="c">Conferences <span>3</span></button>
       <button data-f="recent">Since 2024 <span>5</span></button>
     </div>
-    <div class="pubs" id="pubList">
-      <div class="pub reveal" data-type="j" data-y="2025"><div class="yr">2025</div><div><h3><a href="https://doi.org/10.1038/s41598-025-91275-7" target="_blank" rel="noopener">Enhancing E-commerce recommendations with sentiment analysis using MLA-EDTCNet and collaborative filtering</a></h3><div class="auth">E.S.P. Krishna, T.B. Ramu, R.K. Chaitanya, M.S. Ram, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Scientific Reports, 15(1), 6739</i></div><div class="badges"><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>35</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2025"><div class="yr">2025</div><div><h3><a href="https://doi.org/10.1038/s41598-025-02593-9" target="_blank" rel="noopener">Enhancing sparse data recommendations with self-inspected adaptive SMOTE and hybrid neural networks</a></h3><div class="auth">R. Vatambeti, H.P. Gandikota, D. Siri, G. Satyanarayana, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Scientific Reports, 15(1), 17229</i></div><div class="badges"><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>5</b>citations</div></div>
-      <div class="pub reveal" data-type="c" data-y="2025"><div class="yr">2025</div><div><h3>Breast Cancer Prediction with High Accuracy using SVM: A Comparative Study of Machine Learning Models</h3><div class="auth">N. Bavisetti, S. Abburi, J.L.S. Theeparthi, <b>N. Balayesu</b>, S.R. Mithikala, K.J. Paul</div><div class="meta"><i>3rd International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)</i></div><div class="badges"><span class="type conf">Conference</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>3</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2024"><div class="yr">2024</div><div><h3><a href="https://doi.org/10.1142/S0218126625500094" target="_blank" rel="noopener">S2HConv-Caps-BiGRU: Deep Learning-Based Heterogeneous Face Recognition Model with Divergent Stages</a></h3><div class="auth"><b>N. Balayesu</b>, A.A. Reddy</div><div class="meta"><i>Journal of Circuits, Systems and Computers, 33(18), 2550009</i></div><div class="badges"><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>2</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2024"><div class="yr">2024</div><div><h3><a href="https://doi.org/10.1007/s11042-024-18361-2" target="_blank" rel="noopener">Deep pelican based synthesis model for photo-sketch face synthesis and recognition</a></h3><div class="auth"><b>N. Balayesu</b>, A.A. Reddy</div><div class="meta"><i>Multimedia Tools and Applications, 83(28), 71285–71310</i></div><div class="badges"><span class="type">Journal</span><span class="type idx">SCIE</span></div></div><div class="cites"><b>3</b>citations</div></div>
-      <div class="pub reveal" data-type="c" data-y="2020"><div class="yr">2020</div><div><h3><a href="https://doi.org/10.1007/978-981-15-4739-3_92" target="_blank" rel="noopener">A secure data sharing using IDSS CP-ABE in cloud storage</a></h3><div class="auth">T.P. Ezhilarasi, N. Sudheer Kumar, T.P. Latchoumi, <b>N. Balayesu</b></div><div class="meta"><i>Advances in Industrial Automation and Smart Manufacturing (Springer LNME)</i></div><div class="badges"><span class="type conf">Conference</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>42</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3><a href="https://doi.org/10.1007/s41870-019-00386-8" target="_blank" rel="noopener">An extensive survey on traditional and deep learning-based face sketch synthesis models</a></h3><div class="auth"><b>N. Balayesu</b>, H.K. Kalluri</div><div class="meta"><i>International Journal of Information Technology, 12(3), 995–1004</i></div><div class="badges"><span class="type">Journal</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>20</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3>An Efficient Survey on Energy Conservation System with Video Surveillance</h3><div class="auth">G. Shankar, T. Latchoumi, M. Chithambarathanu, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Journal of Xi'an University of Architecture &amp; Technology, 12, 106</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites"><b>6</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3>Channel Allocation in Wireless Sensor Networks Avoiding Node Collisions</h3><div class="auth"><b>N. Balayesu</b>, G. Vidya Lakshmi, V. Maddumala</div><div class="meta"><i>International Journal of Advanced Science and Technology, 29(5), 12705–12714</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites"><b>3</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2019"><div class="yr">2019</div><div><h3>Optimal Pyramid Column Feature with Contrast Enhanced Model for Face Sketch Synthesis</h3><div class="auth"><b>N. Balayesu</b>, H.K. Kalluri</div><div class="meta"><i>Journal of Advanced Research in Dynamical and Control Systems, 11(5), 335–344</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites none"></div></div>
-      <div class="pub reveal" data-type="j" data-y="2018"><div class="yr">2018</div><div><h3>Comparative study of face recognition techniques</h3><div class="auth"><b>N. Balayesu</b></div><div class="meta"><i>International Journal of Pure and Applied Mathematics, 120(6), 3527–3536</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites"><b>3</b>citations</div></div>
-      <div class="pub reveal" data-type="j" data-y="2012"><div class="yr">2012</div><div><h3>A High-Speed Tree Pattern Matching Algorithm for XML Query</h3><div class="auth">D. Anusha, G. Ramesh Naidu, <b>N. Balayesu</b></div><div class="meta"><i>International Journal of Computer Science and Technology, 3(2), 705–710</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites none"></div></div>
-      <div class="pub reveal" data-type="j" data-y="2012"><div class="yr">2012</div><div><h3>Performance of Clustering with Multi-Viewpoint based Similarity Measure and Optimization Technique</h3><div class="auth"><b>N. Balayesu</b>, M. Rambabu, D. Anusha</div><div class="meta"><i>International Journal of Computer Science and Technology, 3(1, Spl. 5), 907–911</i></div><div class="badges"><span class="type">Journal</span></div></div><div class="cites none"></div></div>
-      <div class="pub reveal" data-type="c" data-y="2011"><div class="yr">2011</div><div><h3>Managing web usage data</h3><div class="auth"><b>N. Balayesu</b>, M. Dabbiru</div><div class="meta"><i>National Conference on Soft Computing Techniques and Applications (NCSCTA-11), 207–211</i></div><div class="badges"><span class="type conf">Conference</span></div></div><div class="cites none"></div></div>
+      <div class="pub-ctrl">
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pubSearch" type="search" placeholder="Search title, journal, co-author…" aria-label="Search publications"></label>
+        <select id="pubSort" aria-label="Sort publications"><option value="year">Newest first</option><option value="cites">Most cited</option></select>
+      </div>
     </div>
+    <div class="pubs" id="pubList">
+      <div class="pub reveal" data-type="j" data-y="2025"><div class="yr">2025</div><div><h3><a href="https://doi.org/10.1038/s41598-025-91275-7" target="_blank" rel="noopener">Enhancing E-commerce recommendations with sentiment analysis using MLA-EDTCNet and collaborative filtering</a></h3><div class="auth">E.S.P. Krishna, T.B. Ramu, R.K. Chaitanya, M.S. Ram, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Scientific Reports, 15(1), 6739</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>35</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2025"><div class="yr">2025</div><div><h3><a href="https://doi.org/10.1038/s41598-025-02593-9" target="_blank" rel="noopener">Enhancing sparse data recommendations with self-inspected adaptive SMOTE and hybrid neural networks</a></h3><div class="auth">R. Vatambeti, H.P. Gandikota, D. Siri, G. Satyanarayana, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Scientific Reports, 15(1), 17229</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>5</b>citations</div></div>
+      <div class="pub reveal" data-type="c" data-y="2025"><div class="yr">2025</div><div><h3>Breast Cancer Prediction with High Accuracy using SVM: A Comparative Study of Machine Learning Models</h3><div class="auth">N. Bavisetti, S. Abburi, J.L.S. Theeparthi, <b>N. Balayesu</b>, S.R. Mithikala, K.J. Paul</div><div class="meta"><i>3rd International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type conf">Conference</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>3</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2024"><div class="yr">2024</div><div><h3><a href="https://doi.org/10.1142/S0218126625500094" target="_blank" rel="noopener">S2HConv-Caps-BiGRU: Deep Learning-Based Heterogeneous Face Recognition Model with Divergent Stages</a></h3><div class="auth"><b>N. Balayesu</b>, A.A. Reddy</div><div class="meta"><i>Journal of Circuits, Systems and Computers, 33(18), 2550009</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span><span class="type idx">SCI</span></div></div><div class="cites"><b>2</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2024"><div class="yr">2024</div><div><h3><a href="https://doi.org/10.1007/s11042-024-18361-2" target="_blank" rel="noopener">Deep pelican based synthesis model for photo-sketch face synthesis and recognition</a></h3><div class="auth"><b>N. Balayesu</b>, A.A. Reddy</div><div class="meta"><i>Multimedia Tools and Applications, 83(28), 71285–71310</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span><span class="type idx">SCIE</span></div></div><div class="cites"><b>3</b>citations</div></div>
+      <div class="pub reveal" data-type="c" data-y="2020"><div class="yr">2020</div><div><h3><a href="https://doi.org/10.1007/978-981-15-4739-3_92" target="_blank" rel="noopener">A secure data sharing using IDSS CP-ABE in cloud storage</a></h3><div class="auth">T.P. Ezhilarasi, N. Sudheer Kumar, T.P. Latchoumi, <b>N. Balayesu</b></div><div class="meta"><i>Advances in Industrial Automation and Smart Manufacturing (Springer LNME)</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type conf">Conference</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>42</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3><a href="https://doi.org/10.1007/s41870-019-00386-8" target="_blank" rel="noopener">An extensive survey on traditional and deep learning-based face sketch synthesis models</a></h3><div class="auth"><b>N. Balayesu</b>, H.K. Kalluri</div><div class="meta"><i>International Journal of Information Technology, 12(3), 995–1004</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span><span class="type idx">Scopus</span></div></div><div class="cites"><b>20</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3>An Efficient Survey on Energy Conservation System with Video Surveillance</h3><div class="auth">G. Shankar, T. Latchoumi, M. Chithambarathanu, <b>N. Balayesu</b>, et al.</div><div class="meta"><i>Journal of Xi'an University of Architecture &amp; Technology, 12, 106</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites"><b>6</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2020"><div class="yr">2020</div><div><h3>Channel Allocation in Wireless Sensor Networks Avoiding Node Collisions</h3><div class="auth"><b>N. Balayesu</b>, G. Vidya Lakshmi, V. Maddumala</div><div class="meta"><i>International Journal of Advanced Science and Technology, 29(5), 12705–12714</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites"><b>3</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2019"><div class="yr">2019</div><div><h3>Optimal Pyramid Column Feature with Contrast Enhanced Model for Face Sketch Synthesis</h3><div class="auth"><b>N. Balayesu</b>, H.K. Kalluri</div><div class="meta"><i>Journal of Advanced Research in Dynamical and Control Systems, 11(5), 335–344</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites none"></div></div>
+      <div class="pub reveal" data-type="j" data-y="2018"><div class="yr">2018</div><div><h3>Comparative study of face recognition techniques</h3><div class="auth"><b>N. Balayesu</b></div><div class="meta"><i>International Journal of Pure and Applied Mathematics, 120(6), 3527–3536</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites"><b>3</b>citations</div></div>
+      <div class="pub reveal" data-type="j" data-y="2012"><div class="yr">2012</div><div><h3>A High-Speed Tree Pattern Matching Algorithm for XML Query</h3><div class="auth">D. Anusha, G. Ramesh Naidu, <b>N. Balayesu</b></div><div class="meta"><i>International Journal of Computer Science and Technology, 3(2), 705–710</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites none"></div></div>
+      <div class="pub reveal" data-type="j" data-y="2012"><div class="yr">2012</div><div><h3>Performance of Clustering with Multi-Viewpoint based Similarity Measure and Optimization Technique</h3><div class="auth"><b>N. Balayesu</b>, M. Rambabu, D. Anusha</div><div class="meta"><i>International Journal of Computer Science and Technology, 3(1, Spl. 5), 907–911</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type">Journal</span></div></div><div class="cites none"></div></div>
+      <div class="pub reveal" data-type="c" data-y="2011"><div class="yr">2011</div><div><h3>Managing web usage data</h3><div class="auth"><b>N. Balayesu</b>, M. Dabbiru</div><div class="meta"><i>National Conference on Soft Computing Techniques and Applications (NCSCTA-11), 207–211</i></div><div class="badges"><button class="cite-btn" type="button">Cite</button><span class="type conf">Conference</span></div></div><div class="cites none"></div></div>
+    </div>
+    <p class="pub-empty" id="pubEmpty" hidden>No publications match your search.</p>
+    <div class="more-wrap"><button class="more-btn" id="pubMore" type="button">Show all publications</button></div>
     <div class="ip">
       <div class="ip-card reveal">
         <div class="ip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
@@ -638,7 +692,7 @@
       <a class="citem reveal" href="https://scholar.google.com/citations?user=baGG83EAAAAJ&amp;hl=en" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9.5l4 2.4V17l7 4 7-4v-5.1l2-1.2V17h2V9.5L12 3z"/></svg></div><small>Google Scholar</small><span>123 citations · View profile →</span></a>
       <a class="citem reveal" href="https://orcid.org/0000-0002-1896-5578" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M13 8h1.5a4 4 0 0 1 0 8H13z"/></svg></div><small>ORCID</small><span>0000-0002-1896-5578 →</span></a>
     </div>
-    <p class="addr reveal">Department of CSE (AI &amp; ML), Vasireddy Venkatadri Institute of Technology, Nambur, Guntur, Andhra Pradesh, India</p>
+    <p class="addr reveal">Department of CSE-AI, Vasireddy Venkatadri International Technological University (VVITU), Nambur, Guntur, Andhra Pradesh, India</p>
   </div>
 </section>
 
@@ -672,16 +726,51 @@
     try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied ✓'}catch(_){b.textContent='Select & copy'}
     setTimeout(()=>b.textContent='Copy',1800);
   }));
-  // publication filters
-  const fb=document.querySelectorAll('.filters button');
-  fb.forEach(b=>b.addEventListener('click',()=>{
-    fb.forEach(x=>x.classList.toggle('on',x===b));
-    const f=b.dataset.f;
-    document.querySelectorAll('#pubList .pub').forEach(p=>{
-      const show=f==='all'||(f==='recent'?+p.dataset.y>=2024:p.dataset.type===f);
-      p.style.display=show?'':'none'; if(show)p.classList.add('in');
+
+  // CV button: show only if cv.pdf exists
+  fetch('cv.pdf',{method:'HEAD'}).then(r=>{if(r.ok&&(r.headers.get('content-type')||'').includes('pdf'))document.getElementById('cvBtn').hidden=false}).catch(()=>{});
+
+  // News toggle
+  (()=>{const box=document.querySelector('.news-box');const n=box.querySelectorAll('.news-list li').length;if(n>3){const b=document.createElement('button');b.className='news-toggle';b.type='button';b.textContent='More ▾';b.onclick=()=>{const o=box.classList.toggle('open');b.textContent=o?'Less ▴':'More ▾'};box.appendChild(b)}})();
+
+  // Experience collapse
+  (()=>{const b=document.getElementById('expMore');if(!b)return;const label=b.textContent;b.onclick=()=>{const olds=document.querySelectorAll('.tl-old');const show=olds[0].hidden;olds.forEach(e=>{e.hidden=!show;if(show)e.classList.add('in')});b.textContent=show?'Show fewer positions':label}})();
+
+  // Publications: filter + search + sort + show more + cite
+  (()=>{
+    const list=document.getElementById('pubList');const items=[...list.querySelectorAll('.pub')];
+    items.forEach((p,i)=>{p.dataset.i=i;const c=p.querySelector('.cites b');p.dataset.c=c?c.textContent:0;});
+    let f='all',q='',sort='year',all=false;const LIMIT=6;
+    const more=document.getElementById('pubMore'),empty=document.getElementById('pubEmpty');
+    function render(){
+      const sorted=[...items].sort((a,b)=>sort==='cites'?(b.dataset.c-a.dataset.c)||(b.dataset.y-a.dataset.y):(b.dataset.y-a.dataset.y)||(a.dataset.i-b.dataset.i));
+      sorted.forEach(p=>list.appendChild(p));
+      let shown=0,match=0;
+      sorted.forEach(p=>{
+        const okF=f==='all'||(f==='recent'?+p.dataset.y>=2024:p.dataset.type===f);
+        const okQ=!q||p.textContent.toLowerCase().includes(q);
+        const ok=okF&&okQ; if(ok)match++;
+        const vis=ok&&(all||q||match<=LIMIT);
+        p.classList.toggle('hide',!vis); if(vis){p.classList.add('in');shown++}
+      });
+      empty.hidden=match>0;
+      more.parentElement.hidden=q||match<=LIMIT;
+      more.textContent=all?'Show fewer':'Show all '+match+' publications';
+    }
+    document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));f=b.dataset.f;render()});
+    document.getElementById('pubSearch').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render()});
+    document.getElementById('pubSort').addEventListener('change',e=>{sort=e.target.value;render()});
+    more.onclick=()=>{all=!all;render();if(!all)document.getElementById('publications').scrollIntoView({behavior:'smooth'})};
+    list.addEventListener('click',async e=>{
+      const b=e.target.closest('.cite-btn');if(!b)return;
+      const p=b.closest('.pub');const title=p.querySelector('h3').textContent.trim();const auth=p.querySelector('.auth').textContent.trim();
+      const venue=p.querySelector('.meta').textContent.trim();const a=p.querySelector('h3 a');const doi=a?' https://doi.org/'+a.href.split('doi.org/')[1]:'';
+      const ref=`${auth} (${p.dataset.y}). ${title}. ${venue}.${doi}`;
+      try{await navigator.clipboard.writeText(ref);b.textContent='Copied ✓'}catch(_){window.prompt?0:0;b.textContent='Copy failed'}
+      b.classList.add('done');setTimeout(()=>{b.textContent='Cite';b.classList.remove('done')},1800);
     });
-  }));
+    render();
+  })();
 </script>
 </body>
 </html>
